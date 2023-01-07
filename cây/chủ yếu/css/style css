@@ -1,0 +1,1696 @@
+@import  url ( 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500 ;1,600;1,700;1,800&display=swap' );
+@import  url ( 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display= hoán đổi' );
+@nhập  url ( 'https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap' );
+@nhập  url ( 'https://fonts.googleapis.com/css2?family=Monoton&display=swap' );
+@nhập  url ( 'https://fonts.googleapis.com/css2?family=K2D:wght@200;300;400;500;600;700;800&display=swap' );
+@nhập  url ( 'https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap' );
+* {
+    phần đệm :  0 % ;
+    ký quỹ :  0 % ;
+    kích thước hộp : hộp viền;
+    họ phông chữ :  'Roboto' , sans-serif;
+}
+: gốc {
+    /* Màu tím mặc định */
+    --primary-bg :  # 170f23 ;
+    --menu-side-bg :  # 231b2e ;
+    --music-play-bg :  # 120c1c ;
+    --bố cục đường viền :  hsla ( 0 , 0 % , 100 % , 0.1 );
+    --phần tử chia đường viền :  rgb ( 47 ,  47 ,  77 );
+    --green-chuối :  # 62c06e ;
+    --green-color :  	# 2E8B57 ;
+    --dark-green :  # 246e44 ;
+    --dark-cyan :  # 109db6 ;
+    --dark-blue :  # 0000d8 ;
+    --none-active-color :  # 4c5262 ;
+    --active-color :  # 36e2ec ;
+    --pink-color :  # fc5c7d ;
+    --blue-color :  # 6a82fb ;
+    --silver-color :  	# C0C0C0 ;
+    --text-color :  # fff ;
+    --sub-text-color :  # 9a9798 ;
+    --orange-color :  # fa8b26 ;
+    --blue-violet :  # a742c6 ;
+    --linear-gradient-bg :  độ dốc tuyến tính ( 180 độ , # 740091 , # 2d1a4c );
+    --theme-modal-bg :  # 432275 ;
+    --background-image :  url ( '../img/bg_mainpage.png' );
+}
+
+cơ thể {
+    chiều rộng :  100 % ;
+    chiều cao :  100 % ;
+    màu nền :  var ( --primary-bg );
+    hiển thị : uốn cong;
+    flex-direction : cột;
+    biện minh cho nội dung : trung tâm;
+    căn chỉnh các mục : trung tâm;
+
+}
+tiêu đề {
+    chiều rộng :  100 % ;
+    chiều cao :  100 vh ;
+    hiển thị : uốn cong;
+    flex-quấn : bọc;
+    tràn : ẩn;
+}
+tiêu đề . phía menu , . bài hát phụ {
+    vị trí : họ hàng;
+    chỉ số z :  3 ;
+    chiều rộng :  25 % ;
+    chiều cao :  87 % ;
+    đường viền :  1 px rắn var ( --bố cục viền );
+    nền :  var ( --menu-side-bg );
+}
+
+tiêu đề . bài hát phụ {
+    chiều rộng :  75 % ;
+    nền :  var ( --primary-bg );
+}
+
+. chơi nhạc {
+    vị trí : cố định;
+    đáy :  0 ;
+    trái : 0 ;
+    chiều rộng :  100 % ;
+    chiều cao :  13 % ;
+    nền :  var ( --music-play-bg );
+    bóng hộp :  var ( --border-divide-element ) 0 px  7 px  8 px ;
+    chỉ số z :  10 ;
+}
+. menu-side__logo {
+    chiều cao :  10 % ;
+    hiển thị : uốn cong;
+    căn chỉnh các mục : trung tâm;
+    trang trí văn bản : không có;
+}
+. menu-side__logo  img : con đầu lòng {
+    hình ảnh động : quay vòng tròn 20 s đảo ngược tuyến tính vô hạn;
+}
+. menu-side__logo  img {
+    chiều rộng :  50px ;
+    lề :  10 px ;
+    bộ lọc :  hue-rotate ( 260 độ );
+}
+. menu-side__playlist {
+    chiều cao :  25 % ;
+    phần đệm :  20 px  0  10 px  10 px ;
+    bóng hộp :  rgba ( 0 ,  0 ,  0 ,  0.2 ) 1 px  1 px  0 px ;
+    
+}
+. menu-side__playlist-nhãn {
+    cỡ chữ :  18 px ;
+    trọng lượng phông chữ :  800 ;
+    nền :  linear-gradient (đến dưới cùng ,  var ( --orange-color ) 0 % ,  var ( --text-color ) 100 % );
+    -webkit-background-clip : văn bản;
+     clip nền : văn bản;
+    -webkit-text-fill-color : trong suốt;
+    lề dưới :  10 px ;
+    họ phông chữ :  'K2D' , sans-serif;
+    
+}
+. menu-side__playlist  h4 {
+    
+    chuyển đổi văn bản : viết hoa;
+    phần đệm dưới cùng :  10 px ;
+    màu sắc :  var ( --none-active-color );
+    con trỏ : con trỏ;
+    cỡ chữ :  16 px ;
+    quá trình chuyển đổi :  .3 s tuyến tính;
+}
+. menu-side__playlist  h4 : hover {
+    màu sắc :  var ( --text-color );
+}
+. menu-side__playlist  h4 :: before {
+    nội dung : "" ;
+    hiển thị : khối nội tuyến;
+    chiều rộng :  6px ;
+    chiều cao :  6px ;
+    bán kính đường viền :  50 % ;
+    đường viền :  2 px rắn var ( --none-active-color );
+    lề phải :  10 px ;
+    quá trình chuyển đổi :  .3 s tuyến tính;
+}
+. menu-side__playlist  h4 : di chuột : trước {
+    đường viền :  2 px rắn var ( --text-color );
+}
+. menu-side__playlist  h4 . bi {
+    hiển thị : không có;
+}
+. menu-side__playlist . hoạt động {
+    màu sắc :  var ( --active-color );
+    hiển thị : uốn cong;
+}
+. menu-side__playlist . năng động . bi {
+    hiển thị : uốn cong;
+    lề phải :  10 px ;
+}
+. menu-side__playlist . hoạt động :: trước {
+    hiển thị : không có;
+}
+
+/*-----BÀI HÁT-----*/
+. menu-side__song {
+    chiều rộng :  100 % ;
+    chiều cao :  65 % ;
+    tràn : ẩn;
+    tràn-y : tự động;
+    hiển thị : không có;
+}
+. menu-side__song . hoạt động {
+    hiển thị : khối;
+}
+/*-----Thanh cuộn tùy chỉnh----*/
+. personal__song--list :: -webkit-scrollbar ,
+. menu-side__song :: -webkit-scrollbar ,
+. song-side :: -webkit-scrollbar ,
+. theme-modal__content :: -webkit-scrollbar
+{
+    chiều rộng :  5px ;
+}
+
+. personal__song--list :: -webkit-scrollbar-track ,
+. menu-side__song :: -webkit-scrollbar-track ,
+. song-side :: -webkit-scrollbar-track ,
+. theme-modal__content :: -webkit-scrollbar-track
+{
+    hộp-bóng : chèn 0  0  5 px màu xám;
+    bán kính đường viền :  10 px ;
+}
+
+. personal__song--list :: -webkit-scrollbar-thumb ,
+. menu-side__song :: -webkit-scrollbar-thumb ,
+. song-side :: -webkit-scrollbar-thumb ,
+. theme-modal__content :: -webkit-scrollbar-thumb
+{
+    nền :  linear-gradient ( xuống dưới ,  var ( --pink-color ) ,  var ( --blue-color ));
+    bán kính đường viền :  10 px ;
+}
+. personal__song--list :: -webkit-scrollbar-thumb : hover ,
+. menu-side__song :: -webkit-scrollbar-thumb : hover ,
+. song-side :: -webkit-scrollbar-thumb : hover ,
+. theme-modal__content :: -webkit-scrollbar-thumb : hover
+{
+    nền :  độ dốc tuyến tính ( lên trên cùng ,  var ( --pink-color ) ,  var ( --blue-color ));
+}
+/*-----Thanh cuộn tùy chỉnh----*/
+
+. menu-side__song-item {
+    lề :  0px 10px ; _  _
+    hiển thị : uốn cong;
+    căn chỉnh các mục : trung tâm;
+    phần đệm :  10 px  0 px ;
+    đường viền dưới cùng :  1 px rắn var ( --bố cục đường viền );
+    quá trình chuyển đổi :  .3 s tuyến tính;
+    con trỏ : con trỏ;
+}
+. menu-side__song-item : hover {
+    màu nền :  var ( --bố cục viền );
+    bán kính đường viền :  6 px ;
+}
+. menu-side__song-item . hoạt động {
+    màu nền :  var ( --bố cục viền );
+    bán kính đường viền :  6 px ;
+}
+. menu-side__song-item--number {
+    cỡ chữ :  14 px ;
+    lề dưới :  10 px ;
+    phần đệm :  0  10 px ;
+    màu sắc :  var ( --text-color );
+    họ phông chữ :  'K2D' , sans-serif;
+}
+. menu-side__song-item--image  img {
+    chiều rộng :  36px ;
+    chiều cao :  36px ;
+    bán kính đường viền :  3 px ;
+    lề phải :  10 px ;
+}
+. menu-side__song-item--info ,
+. chơi nhạc__info
+{
+    màu sắc :  var ( --text-color );
+    cỡ chữ :  14 px ;
+    uốn cong :  1 ;
+}
+. bài hát-mục-tiêu đề {
+    trọng lượng phông chữ :  600 ;
+    lề dưới :  6 px ;
+    khoảng trắng : nowrap;
+    tràn : ẩn;
+    tràn văn bản : dấu chấm lửng;
+}
+. bài hát-mục-ca sĩ {
+    cỡ chữ :  13 px ;
+    màu sắc :  var ( --sub-text-color );
+    khoảng trắng : nowrap;
+    chiều rộng tối đa :  100 % ;
+    tràn : ẩn;
+    tràn văn bản : dấu chấm lửng;
+}
+. menu-side__song-item--play {
+    lề phải :  10 px ;
+    màu sắc :  var ( --text-color );
+}
+. menu-side__song-item--play  i : hover {
+    nền :  độ dốc tuyến tính (đến dưới cùng ,  var ( --orange-color ) 0 % ,  var ( --blue-violet ) 100 % );
+    -webkit-background-clip : văn bản;
+     clip nền : văn bản;
+    -webkit-text-fill-color : trong suốt;
+}
+
+/*----CHƠI PHƯƠNG TIỆN------*/
+. chơi nhạc {
+    hiển thị : uốn cong;
+    căn chỉnh các mục : trung tâm;
+    biện minh cho nội dung : không gian giữa;
+}
+. nhạc-play__left {
+    chiều rộng :  25 % ;
+    hiển thị : uốn cong;
+    căn chỉnh các mục : trung tâm;
+    phần đệm :  0  20 px ;
+}
+. nhạc-play__wave {
+    chiều rộng :  50px ;
+    chiều cao :  30 px ;
+    đường viền :  1 px rắn var ( --text-color );
+    hiển thị : uốn cong;
+    căn chỉnh các mục : flex-end;
+    biện minh cho nội dung : trung tâm;
+    phần đệm dưới cùng :  5 px ;
+    lề phải :  20 px ;
+
+}
+
+
+. nhạc-play__wave-item {
+    chiều rộng :  3px ;
+    chiều cao :  10px ;
+    màu nền :  var ( --text-color );
+    lề phải :  3 px ;
+    bán kính đường viền :  10 px  10 px  0  0 ;
+}
+. music-play__wave-item : nth-child ( 2 ){
+    chiều cao :  15 px ;
+}
+. music-play__wave-item : nth-child ( 3 ){
+    chiều cao :  8px ;
+}
+. chơi nhạc__wave . năng động . nhạc-play__wave-item {
+    hình ảnh động : wave 1 s tuyến tính vô hạn;
+}
+. chơi nhạc__wave . năng động . music-play__wave-item : nth-child ( 2 ){
+    độ trễ hoạt ảnh :  .4 giây ;
+}
+. chơi nhạc__wave . năng động . music-play__wave-item : con cuối cùng {
+    độ trễ hoạt ảnh :  .8 giây ;
+}
+. menu-side__song-item--info {
+    màu sắc :  var ( --text-color );
+    cỡ chữ :  14 px ;
+    tràn : ẩn;
+}
+
+sóng @keyframes {
+    từ {
+        chiều cao :  0px ;
+    }
+    50 % {
+        chiều cao :  15 px ;
+    }
+    đến {
+        chiều cao :  8px ;
+    }
+}
+. nhạc-play__thông tin {
+    chiều rộng :  100 % ;
+    flex-grow : bỏ đặt;
+    khoảng trắng : nowrap;
+    tràn : ẩn;
+    tràn văn bản : dấu chấm lửng;
+}
+. nhạc-play__love {
+    màu sắc :  # fff ;
+    cỡ chữ :  24 px ;
+}
+
+. nhạc-play__hình ảnh {
+    hình nền :  url ( '../img/icon_zingmp3.svg' );
+    lặp lại nền : không lặp lại;
+    kích thước nền : chứa;
+    chiều rộng :  60px ;
+    chiều cao : 60px ;
+    bán kính đường viền :  100 px ;
+    lề :  0 px  20 px  0 px  5 px ;
+}
+. nhạc-play__control {
+    hiển thị : uốn cong;
+    căn chỉnh các mục : trung tâm;
+    biện minh cho nội dung : không gian đồng đều;
+}
+. nhạc-play__control . btn {
+    màu sắc :  var ( --text-color );
+    cỡ chữ :  20 px ;
+    lề :  0  16 px ;
+    con trỏ : con trỏ;
+}
+
+. nhạc-play__control . btn : di chuột {
+    nền :  độ dốc tuyến tính (đến dưới cùng ,  var ( --orange-color ) 0 % ,  var ( --blue-violet ) 100 % );
+    -webkit-background-clip : văn bản;
+     clip nền : văn bản;
+    -webkit-text-fill-color : trong suốt;
+}
+. nhạc-play__control . btn . tôi đang hoạt động  {
+    nền :  độ dốc tuyến tính (đến dưới cùng ,  var ( --orange-color ) 0 % ,  var ( --blue-violet ) 100 % );
+    -webkit-background-clip : văn bản;
+     clip nền : văn bản;
+    -webkit-text-fill-color : trong suốt;
+}
+
+. nhạc-play__control . btn-toggle-play {
+    cỡ chữ :  36 px ;
+}
+. nhạc-play__progress {
+    hiển thị : uốn cong;
+    căn chỉnh các mục : trung tâm;
+}
+. nhạc-play__progress  span {
+    cỡ chữ :  14 px ;
+    trọng lượng phông chữ :  400 ;
+    lề :  0  10 px ;
+}
+. nhạc-play__progress--bắt đầu {
+    màu sắc :  var ( --active-color );
+}
+. nhạc-play__progress--end {
+    màu sắc :  var ( --text-color );
+}
+. music-play__progress--seek {
+    vị trí : họ hàng;
+    chiều rộng :  400 px ;
+    chiều cao :  4px ;
+    lề :  0  10 px ;
+    màu nền :  var ( --none-active-color );
+    con trỏ : con trỏ;
+}
+. music-play__progress--seek  input {
+    chiều rộng :  400 px ;
+    con trỏ : con trỏ;
+}
+. music-play__progress--seek . seek__bar ,
+. nhạc-play__volume . tìm kiếm quán bar
+{
+    vị trí : tuyệt đối;
+    chiều rộng :  0 % ;
+    chiều cao :  100 % ;
+    hàng đầu :  0 ;
+    nền :  var ( --active-color );
+}
+. nhạc-play__volume . seek__bar {
+    chiều rộng :  100 % ;
+}
+
+. music-play__progress--seek . seek__dot ,
+. nhạc-play__volume . seek__dot
+{
+    vị trí : tuyệt đối;
+    chiều rộng :  10 px ;
+    chiều cao :  10px ;
+    màu nền :  var ( --text-color );;
+    b hoặc der - bán kính : 100%;
+    đến p : -3px;
+    trái : 0;
+}
+. nhạc-play__volume . seek__dot {
+    còn lại :  100 % ;
+}
+
+. music-play__progress--seek . seek__dot :: trước ,
+. nhạc-play__volume . seek__dot :: trước
+{
+    nội dung : "" ;
+    vị trí : tuyệt đối;
+    chiều rộng :  20px ;
+    chiều cao :  20px ;
+    đường viền :  1 px rắn var ( --text-color );
+    bán kính đường viền :  100 % ;
+    trên cùng : -6 px ;
+    trái :  -6 px ;
+    chỉ số z :  1 ;
+    con trỏ : con trỏ;
+}
+. music-play__progress--seek  input {
+    vị trí : tuyệt đối;
+    chiều rộng :  100 % ;
+    trên cùng :  -6 px ;
+    độ mờ :  0 ;
+    chỉ số z :  1 ;
+}
+
+. nhạc-play__volume {
+    vị trí : họ hàng;
+    chiều rộng :  100 px ;
+    chiều cao :  4px ;
+    lề phải :  30 px ;
+    màu nền :  var ( --none-active-color );
+}
+. nhạc-play__volume  tôi {
+    vị trí : tuyệt đối;
+    trên cùng :  -13 px ;
+    trái :  -30 px ;
+    cỡ chữ :  24 px ;
+    màu sắc :  var ( --text-color );
+}
+. nhạc-play__đầu  vào âm lượng {
+    vị trí : tuyệt đối;
+    chiều rộng :  100 % ;
+    trên cùng :  -6 px ;
+    độ mờ : 0 ;
+    chỉ số z :  1 ;
+    con trỏ : con trỏ;
+    
+}
+
+/*TRANG CHÍNH BÀI HÁT*/
+. bài hát phụ {
+    chỉ số z :  2 ;
+   
+}
+. song-side :: before {
+    nội dung : "" ;
+    vị trí : cố định;
+    chiều rộng :  100 % ;
+    chiều cao :  100 % ;
+    nền :  var ( --background-image ) không lặp lại trên cùng bên phải;
+    hàng đầu :  0 ;
+    trái :  0 ;
+    chỉ số z :  -2 ;
+}
+. song-side__heading {
+    vị trí : dính;
+    hàng đầu :  0 ;
+    chiều rộng :  100 % ;
+    chiều cao :  80 px ;
+    biện minh cho nội dung : không gian giữa;
+    phần đệm dưới cùng :  16 px ;
+    chỉ số z :  10 ;
+    quá trình chuyển đổi :  .3 s tuyến tính;
+    phần đệm trên cùng :  8 px ;
+}
+. song-side__heading . dính {
+    nền :  var ( --music-play-bg );
+    bóng hộp :  var ( --border-divide-element ) 0 px  1 px  2 px ;
+    phần đệm trên cùng :  0 px ;
+    độ mờ :  0 ;
+    quá trình chuyển đổi : tất cả .3 s tuyến tính;
+    hình ảnh động : mờ dần tuyến tính .3 s về phía trước;
+}
+. song-side__banner--title . mờ dần ,
+. song-side__banner--content . mờ dần
+{
+    độ mờ :  1 ;
+    hình ảnh động : mờ dần tuyến tính .1 s về phía trước;
+}
+@keyframes mờ dần {
+    đến { độ mờ :  0 ;}
+}
+@keyframes mờ dần {
+    đến { độ mờ :  1 ;}
+}
+
+. song-side__heading--left {
+    hiển thị : uốn cong;
+    căn chỉnh các mục : trung tâm;
+    biện minh cho nội dung : không gian giữa;
+    chiều rộng :  70 % ;
+    phần đệm bên trái :  20 px ;
+    
+}
+. song-side__heading--left  ul {
+    hiển thị : uốn cong;
+    lề dưới :  16 px ;
+    
+}
+. song-side__heading--left  ul  li {
+    vị trí : họ hàng;
+    kiểu danh sách : không có;
+    màu sắc :  var ( --none-active-color );
+    trọng lượng phông chữ :  600 ;
+    chuyển đổi văn bản : chữ hoa;
+    cỡ chữ :  14 px ;
+    lề :  0  10 px ;
+    con trỏ : con trỏ;
+    quá trình chuyển đổi :  .3 s tuyến tính;
+    
+}
+. song-side__heading--left  ul  li : hover {
+    màu sắc :  var ( --active-color );
+}
+. song-side__heading--left  ul  li . hoạt động {
+    màu sắc :  var ( --active-color );
+}
+
+. song-side__heading--left  ul  li . hoạt động :: trước {
+    vị trí : tuyệt đối;
+    nội dung : "" ;
+    chiều rộng :  100 % ;
+    chiều cao :  2px ;
+    hiển thị : khối nội tuyến;
+    dưới cùng :  -10 px ;
+    trái : 0 ;
+    bán kính đường viền :  20 px ;
+    màu nền :  var ( --active-color );
+}
+. song-side__heading--search {
+    chiều rộng :  50 % ;
+    vị trí : họ hàng;
+    lề phải :  10 px ;
+}
+. song-side__heading--search . search__container {
+    hiển thị : uốn cong;
+    căn chỉnh các mục : trung tâm;
+    bán kính đường viền :  20 px ;
+    chiều cao :  30 px ;
+    màu nền :  hsla ( 0 , 0 % , 100 % , 0.1 );
+}
+
+. search__container . tìm kiếm-btn {
+    màu sắc :  var ( --text-color );
+    cỡ chữ :  20 px ;
+    phần đệm :  10 px ;
+}
+. tìm kiếm__đầu  vào vùng chứa {
+    chiều rộng :  99 % ;
+    cỡ chữ :  16 px ;
+    trọng lượng phông chữ :  300 ;
+    nền : trong suốt;
+    màu sắc :  var ( --text-color );
+    phác thảo : không có;
+    biên giới : không có;
+    lề phải :  10 px ;
+}
+
+. tìm kiếm_kết quả {
+    chiều rộng :  24 % ;
+    chiều cao tối đa :  200 px ;
+    chỉ số z :  100 ;
+    vị trí : cố định;
+    trái :  52 % ;
+    trên cùng :  60 px ;
+    bán kính đường viền : 10 px ;
+    hiển thị : uốn cong;
+    flex-direction : cột;
+    căn chỉnh các mục : flex-start;
+    biện minh cho nội dung : flex-start;
+    tràn : tự động;
+    màu nền :  var ( --theme-modal-bg );
+}
+. search__result :: -webkit-scrollbar {
+    hiển thị : không có;
+}
+. search__result--item {
+    chiều rộng :  100 % ;
+    chiều cao tối thiểu :  50 px ;
+    bán kính đường viền : kế thừa;
+    hiển thị : uốn cong;
+    căn chỉnh các mục : trung tâm;
+    đệm :  5px 10px ; _  _
+    trang trí văn bản : không có;
+}
+. result__item--img {
+    lề phải :  10 px ;
+}
+. result__item--img  img {
+    chiều rộng :  35 px ;
+    chiều cao :  35 px ;
+    bán kính đường viền :  5 px ;
+}
+. result__item--content {
+    cơ sở flex : tự động;
+    uốn cong :  1 ;
+    uốn cong :  1 ;
+    căn chỉnh văn bản : bên trái;
+    căn chỉnh chính mình : trung tâm;
+    chiều rộng :  0 ;
+    
+}
+. result__item--content . nội dung_tiêu đề , . nội dung__phụ đề {
+    khoảng trắng : nowrap;
+    tràn văn bản : dấu chấm lửng;
+    tràn : ẩn;
+    chiều rộng tối đa :  100 % ;
+    chiều cao dòng : bình thường;
+}
+. result__item--content . nội dung__tiêu đề {
+    cỡ chữ :  14 px ;
+    màu sắc :  var ( --text-color );
+   
+}
+. result__item--content . nội dung__phụ đề {
+    cỡ chữ :  12 px ;
+    trọng lượng phông chữ :  400 ;
+    màu sắc :  var ( --sub-text-color );
+
+}
+. song-side__heading--right {
+    hiển thị : uốn cong;
+    chiều rộng :  30 % ;
+    căn chỉnh các mục : trung tâm;
+    biện minh cho nội dung : flex-end;
+}
+. song-side__heading--right  >  div {
+    lề :  0  6 px ;
+}
+. song-side__heading--theme ,
+. song-side__heading--setting {
+    vị trí : họ hàng;
+    chiều rộng :  40px ;
+    chiều cao :  40px ;
+    bán kính đường viền :  100 px ;
+    màu nền :  # 2f2739 ;
+    con trỏ : con trỏ;
+}
+. song-side__heading--theme  img , 
+. song-side__heading--setting  i {
+    vị trí : tuyệt đối;
+    hàng đầu :  22 % ;
+    còn lại :  25 % ;
+    cỡ chữ :  20 px ;
+    màu sắc  :  # fff ;
+}
+. song-side__heading--user  img {
+    chiều rộng :  40px ;
+    chiều cao :  40px ;
+    phù hợp với đối tượng : bìa;
+    bán kính đường viền :  100 px ;
+    lề phải :  20 px ;
+}
+. chú giải công cụ {
+    khả năng hiển thị : ẩn;
+    vị trí : tuyệt đối;
+    chiều rộng :  50px ;
+    màu nền :  # 555 ;
+    màu sắc :  # fff ;
+    căn chỉnh văn bản : trung tâm;
+    bán kính đường viền :  6 px ;
+    phần đệm :  2 px  0 ;
+    độ mờ :  0 ;
+    trái : -20 px ;
+    cỡ chữ :  12 px ;
+    quá trình chuyển đổi : độ mờ 1 s ;
+}
+. song-side__heading--right  >  div : hover . chú giải công cụ {
+    khả năng hiển thị : có thể nhìn thấy;
+    độ mờ :  1 ;
+}
+
+. tooltip-bottom {
+    hàng đầu :  120 % ;
+    còn lại :  -10 % ;
+}
+. tooltip-bottom :: sau {
+    nội dung :  "" ;
+    vị trí : tuyệt đối;
+    đáy :  100 % ;
+    còn lại :  50 % ;
+    lề trái :  -5 px ;
+    chiều rộng đường viền :  5 px ;
+    kiểu viền : đặc;
+    màu viền : trong suốt trong suốt # 555 trong suốt;
+}
+/*-----ẢNH BÌA------*/
+. bài hát phụ {
+    chiều cao :  87 % ;
+    tràn : ẩn;
+    tràn-y : tự động;
+    hành vi cuộn : mượt mà;
+}
+
+. song-side__banner {
+    chiều rộng :  100 % ;
+    chiều cao :  130 px ;
+    phần đệm bên trái :  20 px ;
+    hiển thị : uốn cong;
+    flex-direction : cột;
+    biện minh cho nội dung : không gian xung quanh;
+}
+
+. song-side__banner--title {
+    màu sắc :  var ( --text-color );
+    trọng lượng phông chữ :  600 ;
+    cỡ chữ :  28 px ;
+}
+. song-side__banner--content {
+    chiều rộng :  50 % ;
+    màu sắc :  var ( --none-active-color );
+    cỡ chữ :  14 px ;
+    phần đệm bên trái :  8 px ;
+}
+. song-side__banner--btn  button {
+    chiều rộng :  120 px ;
+    chiều cao :  30 px ;
+    bán kính đường viền :  20 px ;
+    lề phải :  10 px ;
+    trọng lượng phông chữ :  500 ;
+    chuyển đổi văn bản : chữ hoa;
+    con trỏ : con trỏ;
+}
+
+. song-side__banner--btn . banner__btn-play {
+    cỡ chữ :  16 px ;
+    chiều cao :  35 px ;
+    màu sắc :  var ( --text-color );
+    biên giới : không có;
+    kích thước nền :  300 %  100 % ;
+    bán kính đường viền :  20 px ;
+    hình nền :  độ dốc tuyến tính (sang phải ,  # 25aae1 ,  # 4481eb ,  # 04befe ,  # 3f86ed );
+    bóng hộp :  0  1 px  2 px  0  rgba ( 65 ,  132 ,  234 ,  0,75 );
+    quá trình chuyển đổi : tất cả .4 s dễ dàng vào ra;
+}
+. song-side__banner--btn . banner__btn-play : hover {
+    vị trí nền :  100 %  0 ;
+    quá trình chuyển đổi : tất cả .4 s dễ dàng vào ra;
+}
+
+. song-side__banner--btn . banner__btn-theo {
+    màu sắc :  var ( --active-color );
+    nền : trong suốt;
+}
+
+/*-----PHỔ BIẾN-----*/
+. song-side__playlist {
+    chiều rộng :  100 % ;
+    chiều cao : tự động;
+    phần đệm :  0  20 px ;
+    lề :  20 px  0 ;
+    hiển thị : uốn cong;
+    flex-direction : cột;
+    biện minh cho nội dung : không gian xung quanh;
+}
+. song-side__playlist--popular {
+    chiều rộng :  100 % ;
+    chiều cao :  30 px ;
+    màu sắc :  var ( --text-color );
+    hiển thị : uốn cong;
+    biện minh cho nội dung : không gian giữa;
+    căn chỉnh các mục : trung tâm;
+}
+
+. playlist__popular--title {
+    cỡ chữ :  20 px ;
+    trọng lượng phông chữ :  700 ;
+}
+. song-side__playlist--carousel {
+    hiển thị : uốn cong;
+    tràn-x : tự động;
+    hành vi cuộn : mượt mà;
+    trang trí văn bản : không có;
+}
+. container__personal--wrapper-item . song-side__playlist--carousel {
+    lề :  0px 20px ; _  _
+}
+. song-side__playlist--carousel :: -webkit-scrollbar {
+    hiển thị : không có;
+}
+. playlist__carousel-item , . playlist__carousel-item--circle  >  * {
+    phần đệm :  2 px ;
+    quá trình chuyển đổi :  .2 s tuyến tính;
+}
+. playlist__popular--arrow  >  i : hover ,
+. playlist__carousel-item  >  div : hover {
+    màu sắc :  var ( --blue-violet );
+    con trỏ : con trỏ;
+}
+. playlist__carousel-item ,
+. playlist__carousel-item--circle {
+    chiều rộng :  160 px ;
+    chiều cao tối đa :  220 px ;
+    chiều cao : tự động;
+    lề :  10 px  30 px  0  0 ;
+    trang trí văn bản : không có;
+}
+. playlist__carousel-item--img ,
+. carousel-item__circle--img {
+    chiều rộng :  100 % ;
+    bán kính đường viền :  4 px ;
+    vị trí : họ hàng;
+    tràn : ẩn;
+}
+. playlist__carousel-item--img {
+    chiều cao :  160 px ;
+}
+. carousel-item__circle--img {
+    bán kính đường viền :  100 px ;
+}
+. song-side__new-release--thumbnail  img ,
+. playlist__carousel-item--img  img ,
+. carousel-item__circle--img  img
+{
+    chiều rộng :  160 px ;
+    chiều cao :  160 px ;
+    bán kính đường viền :  4 px ;
+    tràn : ẩn;
+    quá trình chuyển đổi : tất cả .3 s tuyến tính;
+}
+. song-side__new-release--thumbnail : hover  i ,
+. playlist__carousel-item--img : hover  i ,
+. carousel-item__circle--img : hover  i
+{
+    hiển thị : khối;
+}
+. song-side__new-release--thumbnail : hover  img ,
+. playlist__carousel-item--img : hover  img ,
+. carousel-item__circle--img : hover  img
+{
+    biến đổi :  tỷ lệ ( 1.1 );
+    bộ lọc :  độ sáng ( 60 % );
+}
+. song-side__new-release--thumbnail  i ,
+. playlist__carousel-item--img  i ,
+. carousel-item__circle--img  i {
+    cỡ chữ :  36 px ;
+    vị trí : tuyệt đối;
+    hàng đầu :  50 % ;
+    còn lại :  50 % ;
+    biến đổi : dịch ( -50 % ,  -50 % );
+    màu sắc :  # fff ;
+    hiển thị : không có;
+}
+
+. playlist__carousel-item--title ,
+. playlist__carousel-item--subtitle {
+    cỡ chữ :  14 px ;
+    trọng lượng phông chữ :  700 ;
+    màu sắc :  var ( --text-color );
+    khoảng trắng : nowrap;
+    chiều rộng tối đa :  100 % ;
+    tràn : ẩn;
+    tràn văn bản : dấu chấm lửng;
+    lề trên :  4 px ;
+}
+. carousel-item__circle--subtitle ,
+. mv-item__info--nội dung . info__content-subtitle ,
+. playlist__carousel-item--subtitle
+{
+    cỡ chữ :  12 px ;
+    trọng lượng phông chữ : 500 ;
+    màu sắc :  var ( --sub-text-color );
+}
+
+/*-----CA SỸ-----*/
+. song-side__new-release ,
+. song-side__singer {
+    chiều rộng :  100 % ;
+    chiều cao : tự động;
+    phần đệm :  0  20 px ;
+    lề :  20 px  0 ;
+    hiển thị : uốn cong;
+    flex-direction : cột;
+    biện minh cho nội dung : không gian xung quanh;
+}
+. playlist__carousel-item--circle {
+    chiều rộng : tự động;
+    lề :  10 px  30 px  0  0 ;
+    căn chỉnh văn bản : trung tâm;
+}
+. carousel-item__circle--img  img {
+    chiều rộng :  120 px ;
+    chiều cao :  120 px ;
+    bán kính đường viền :  100 px ;
+}
+. carousel-item__circle--title ,
+. carousel-item__circle--name {
+    cỡ chữ :  14 px ;
+    trọng lượng phông chữ :  700 ;
+    màu sắc :  var ( --text-color );
+    khoảng trắng : nowrap;
+    chiều rộng tối đa :  100 % ;
+    tràn : ẩn;
+    tràn văn bản : dấu chấm lửng;
+    lề trên :  4 px ;
+}
+
+. song-side__container {
+    hiển thị : không có;
+}
+. song-side__container . hoạt động {
+    hiển thị : khối;
+}
+
+/*-----ĐỒ THỊ-----*/
+. song-side__chart {
+    chiều rộng :  100 % ;
+}
+
+. song-side__playlist--carousel . biểu đồ {
+    hiển thị : uốn cong;
+}
+. song-side__chart--wrapper {
+    vị trí : họ hàng;
+    lề :  20 px ;
+    phần đệm :  10 px  5 px ;
+    bán kính đường viền :  10 px ;
+    nền :  url ( 'https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.6.22/static/media/bg-chart.fd766403.jpg' ) không lặp lại;
+    kích thước nền : bìa;
+}
+. song-side__chart--wrapper . playlist__popular--title {
+    chỉ số z :  1 ;
+    con trỏ : con trỏ;
+}
+. song-side__chart--overlay {
+    vị trí : tuyệt đối;
+    hàng đầu :  0 ;
+    trái :  0 ;
+    đáy :  0 ;
+    phải : 0 ;
+    độ mờ :  0,9 ;
+    nền :  var ( --linear-gradient-bg );
+    bán kính đường viền :  10 px ;
+}
+. song-side__chart--wrapper . song-side__playlist--popular {
+    lề :  20 px  0  0  20 px ;
+}
+# biểu đồ của tôi {
+    lề :  20 px ;
+}
+. chart__legend-box {
+    vị trí : họ hàng;
+    chiều rộng :  30 % ;
+    chỉ số z :  1 ;
+    hiển thị : uốn cong;
+    flex-direction : cột;
+    biện minh cho nội dung : flex-start;
+}
+. biểu đồ__chính {
+    chỉ số z :  1 ;
+    chiều rộng :  70 % ;
+}
+. chart__legend-box--item {
+    chiều rộng :  100 % ;
+    hiển thị : uốn cong;
+    màu sắc :  var ( --text-color );
+    lề :  10 px ;
+    bán kính đường viền :  10 px ;
+    căn chỉnh các mục : trung tâm;
+    con trỏ : con trỏ;
+}
+. chart__legend-box--item : hover {
+    màu nền :  var ( --bố cục viền ) !quan trọng ;
+}
+. chart__legend--show-more {
+    vị trí : tuyệt đối;
+    dưới cùng :  20 px ;
+    còn lại :  50 % ;
+    biến đổi :  dịch ( -50 % ,  -50 % );
+}
+. chart__legend--show-more  a {
+    màu sắc :  var ( --text-color );
+    trang trí văn bản : không có;
+    đệm :  5px 10px ; _  _
+    màu nền : trong suốt;
+    đường viền :  1 px rắn var ( --text-color );
+    bán kính đường viền :  100 px ;
+}
+. chart__legend--show-more  a : hover {
+    màu nền :  var ( --bố cục viền );
+}
+. legend-box__item-song {
+    chiều rộng :  100 % ;
+    hiển thị : uốn cong;
+    căn chỉnh các mục : trung tâm;
+    phần đệm :  10 px ;
+}
+. legend-box__item-number {
+    font-family :  'Bungee Outline' , chữ thảo;
+    cỡ chữ :  28 px ;
+    lề trái :  10 px ;
+}
+. legend-box__item-song--info {
+    phần đệm :  10 px ;
+    cỡ chữ :  14 px ;
+    chiều rộng :  100 % ;
+}
+. legend-box__item-song--info . song__info-title {
+    trọng lượng phông chữ :  600 ;
+    cỡ chữ :  18 px ;
+    màu sắc :  var ( --text-color );
+    hiển thị : -webkit-box;
+    -webkit-line-kẹp : 1 ;
+    -webkit-box-orient : dọc;
+    tràn : ẩn;
+    tràn văn bản : dấu chấm lửng;
+    ngắt từ : ngắt từ;
+}
+. song__info-phụ đề {
+    chiều rộng :  100 px ;
+    khoảng trắng : nowrap;
+    tràn : ẩn;
+    tràn văn bản : dấu chấm lửng;   
+}
+. legend-box__item-song--percent {
+    cỡ chữ :  18 px ;
+    trọng lượng phông chữ :  700 ;
+}
+
+/*-----PHIÊN BẢN MỚI----*/
+. song-side__new-release--item {
+    chiều rộng :  318 px ;
+    chiều cao : tự động;
+    phần đệm :  10 px ;
+    hiển thị : uốn cong;
+    nền :  var ( --bố cục viền );
+    bán kính đường viền :  4 px ;
+    bóng hộp :  # 424242  0 px  2 px  10 px  0 px ;
+    lề :  10 px  20 px  0 px  0 px ;
+}
+. song-side__new-release--thumbnail {
+    chiều rộng :  80 % ;
+    chiều cao :  120 px ;
+    vị trí : họ hàng;
+    bán kính đường viền :  4 px ;
+    tràn : ẩn;
+}
+. song-side__new-release--thumbnail  img {
+    chiều rộng :  100 % ;
+    chiều cao :  120 px ;
+    bán kính đường viền :  4 px ;
+}
+. song-side__new-release--content {
+    chiều rộng :  100 % ;
+    căn chỉnh văn bản : bên trái;
+    hiển thị : uốn cong;
+    flex-direction : cột;
+    biện minh cho nội dung : không gian giữa;
+    phần đệm bên trái :  10 px ;
+
+}
+. new-release__info--title {
+    màu sắc :  var ( --text-color );
+    trọng lượng phông chữ :  700 ;
+    cỡ chữ :  20 px ;
+    hiển thị : -webkit-box;
+    -webkit-line-kẹp : 1 ;
+    -webkit-box-orient : dọc;
+    tràn : ẩn;
+    tràn văn bản : dấu chấm lửng;
+    ngắt từ : ngắt từ;
+}
+. new-release__info--subtitle {
+    màu sắc :  var ( --sub-text-color );
+    trọng lượng phông chữ :  600 ;
+    cỡ chữ :  14 px ;
+    hiển thị : -webkit-box;
+    -webkit-line-kẹp : 1 ;
+    -webkit-box-orient : dọc;
+    tràn : ẩn;
+    tràn văn bản : dấu chấm lửng;
+    ngắt từ : ngắt từ;
+
+}
+. bản phát hành mới__time {
+    chiều rộng :  100 % ;
+    màu sắc :  var ( --sub-text-color );
+    hiển thị : uốn cong;
+    biện minh cho nội dung : không gian giữa;
+    căn chỉnh các mục : flex-end;
+}
+. new-release__time--rank {
+    trọng lượng phông chữ :  900 ;
+    cỡ chữ :  40 px ;
+    
+}
+. new-release__time--date {
+    trọng lượng phông chữ :  600 ;
+    cỡ chữ :  16 px ;
+    lề dưới :  4 px ;
+}
+. swiper-backface-hidden . thanh trượt {
+    chiều rộng :  100 % ;
+}
+
+/*----TRƯỢT TỰ ĐỘNG----*/
+. song-side__container {
+    vị trí : họ hàng;
+}
+. song-side__container  ul {
+    kiểu danh sách : không có;
+    vị trí : họ hàng;
+    chiều rộng :  320px ;
+    chiều cao :  230 px ;
+    -webkit-tap-highlight-color : trong suốt;
+    căn chỉnh các mục : trung tâm;
+}
+. song__animate-img--item {
+    bán kính đường viền :  4 px ;
+    vị trí : tuyệt đối;
+    tràn : ẩn;
+    chiều rộng :  230px ;
+    chiều cao :  230 px ;
+    quá trình chuyển đổi : tất cả .8 giây
+}
+. song__animate-img--item  img {
+    chiều rộng :  100 % ;
+}
+. thứ ba {
+    chỉ số z :  1 ;
+    chiều cao :  160 px ;
+    chiều rộng :  160 px ;
+    trái :  0 ;
+    dưới cùng :  34 px ;
+    độ mờ :  .3 ;
+    hình nền :  độ dốc tuyến tính ( 90 độ , hsla ( 0 , 0 % , 100 % , 0.5 ) 1 % , rgba ( 0 , 0 , 0 , 0.6 ) 14 % );
+}
+
+. thứ hai {
+    chỉ số z :  2 ;
+    chiều cao :  190 px ;
+    chiều rộng :  190 px ;
+    bên trái :  20px ;
+    dưới cùng :  20 px ;
+    độ mờ :  .7 ;
+}
+
+. đầu tiên {
+    chỉ số z :  3 ;
+    chiều cao :  230 px ;
+    chiều rộng :  230px ;
+    bên trái :  40px ;
+    đáy :  0 ;
+    độ mờ :  1 ;
+}
+/*-----THIẾT THỨC CHỦ ĐỀ------*/
+. chủ đề-phương thức {
+    vị trí : cố định;
+    hàng đầu :  50 % ;
+    còn lại :  50 % ;
+    biến đổi : dịch ( -50 % ,  -50 % );
+    chiều rộng :  70 % ;
+    chiều rộng tối đa :  900 px ;
+    chiều cao tối đa :  90 % ;
+    chiều cao tối thiểu :  600 px ;
+    nền :  var ( --theme-modal-bg );
+    bán kính đường viền : 8 px ;
+    chỉ số z :  40 ;
+    màu sắc :  var ( --text-color );
+    hiển thị : không có;
+}
+. chủ đề-modal__heading {
+    vị trí : dính;
+    nền :  var ( --theme-modal-bg );
+    hiển thị : uốn cong;
+    căn chỉnh các mục : trung tâm;
+    biện minh cho nội dung : không gian giữa;
+    cỡ chữ :  24 px ;
+    phần đệm :  20 px  30 px  10 px  30 px ;
+    bán kính trên cùng bên trái : kế thừa;
+    bán kính trên cùng bên phải : kế thừa;
+
+}
+. chủ đề-modal__content {
+    chiều cao :  500 px ;
+    tràn : ẩn;
+    tràn-y : tự động;
+}
+
+. theme-modal__content--item {
+    phần đệm :  20 px  30 px ;
+
+}
+. theme-modal__content--item  h3 {
+    lề dưới :  10 px ;
+    cỡ chữ :  18 px ;
+   
+}
+. content__item--container {
+    hiển thị : lưới;
+    grid-template-columns :  lặp lại (tự động điền ,  minmax ( 126 px ,  1 fr ));
+    khoảng cách lưới :  20 px ;
+}
+
+. content__item--theme  img {
+    chiều rộng :  100 % ;
+    chiều cao :  100 % ;
+    phù hợp với đối tượng : bìa;
+    bán kính đường viền : 8 px ;
+
+}
+. content__item--theme  h4 {
+    cỡ chữ :  12 px ;
+}
+. item__theme--display {
+    vị trí : họ hàng;
+}
+. item__theme--actions {
+    vị trí : tuyệt đối;
+    hàng đầu :  50 % ;
+    còn lại : 50 % ;
+    biến đổi : dịch ( -50 % ,  -50 % );
+    hiển thị : uốn cong;
+    flex-direction : cột;
+    căn chỉnh các mục : trung tâm;
+    hiển thị : không có;
+}
+. item__theme--  nút hành động {
+    chiều rộng :  100 px ;
+    chiều cao :  24px ;
+    bán kính đường viền :  20 px ;
+    chuyển đổi văn bản : chữ hoa;
+    cỡ chữ :  10 px ;
+    màu sắc :  # fff ;
+    đường viền :  1 px liền # fff ;
+    lề :  5 px  0 ;
+}
+. item__theme--  nút hành động : con đầu lòng {
+    màu nền :  var ( --green-color );
+    biên giới : không có;
+}
+. item__theme--  nút hành động : con đầu lòng : hover {
+    màu nền :  var ( --dark-green );
+}
+. item__theme--  nút hành động : con cuối cùng {
+    màu nền : trong suốt;
+}
+. item__theme--display : hover . item__theme--actions {
+    hiển thị : khối;
+}
+. item__theme--display : hover  img {
+    bộ lọc :  độ sáng ( 50 % );
+}
+
+/*-----CÁ NHÂN-----*/
+
+. container__personal--heading {
+    hiển thị : uốn cong;
+    flex-direction : cột;
+    căn chỉnh các mục : trung tâm;
+    biện minh cho nội dung : không gian giữa;
+    chiều rộng :  100 % ;
+    chiều cao : tự động;
+}
+. container__personal--heading  img {
+    chiều rộng :  100 px ;
+    chiều cao :  100 px ;
+    bán kính đường viền :  100 px ;
+}
+. container__personal--heading . cá nhân_tên-người dùng {
+    cỡ chữ :  28 px ;
+    trọng lượng phông chữ :  700 ;
+    lề :  10 px  0 ;
+    màu sắc :  var ( --text-color );
+}
+. container__personal--body {
+    hiển thị : uốn cong;
+    căn chỉnh các mục : trung tâm;
+    biện minh cho nội dung : trung tâm;
+    chiều rộng :  100 % ;
+    chiều cao : tự động;
+    phần đệm :  20 px  0 ;
+}
+
+. container__personal--body . cá nhân__thanh điều hướng {
+    chiều rộng : tự động;
+    chiều cao :  36px ;
+    phần đệm :  10 px  2 px ;
+    ký quỹ :  0 tự động;
+    chuyển đổi văn bản : chữ hoa;
+    bán kính đường viền :  20 px ;
+    kiểu danh sách : không có;
+    hiển thị : uốn cong;
+    căn chỉnh các mục : trung tâm;
+    biện minh cho nội dung : trung tâm;
+    màu nền : var ( --bố cục viền );
+}
+. cá nhân__navbar-mục {
+    căn chỉnh văn bản : trung tâm;
+    chiều cao :  28px ;
+    bán kính đường viền : kế thừa;
+    hiển thị : uốn cong;
+    phần đệm :  15 px ;
+    cỡ chữ :  12 px ;
+    biện minh cho nội dung : trung tâm;
+    căn chỉnh các mục : trung tâm;
+    màu sắc :  var ( --text-color );
+}
+. cá nhân__navbar-item . hoạt động {
+    màu nền :  var ( --silver-color );
+}
+. container__personal--control {
+    chiều rộng :  100 % ;
+    hiển thị : uốn cong;
+    căn chỉnh các mục : trung tâm;
+    biện minh cho nội dung : không gian giữa;
+    phần đệm :  0  20 px ;
+}
+. cá nhân__title--left {
+    màu sắc :  var ( --text-color );
+    cỡ chữ :  20 px ;
+    trọng lượng phông chữ :  700 ;
+}
+. cá nhân__title--  nút bên phải {
+    căn chỉnh văn bản : trung tâm;
+    chiều cao :  28px ;
+    bán kính đường viền :  20 px ;
+    biên giới : không có;
+    hiển thị : uốn cong;
+    phần đệm :  15 px ;
+    biện minh cho nội dung : trung tâm;
+    căn chỉnh các mục : trung tâm;
+    màu nền :  var ( --dark-blue );
+    màu sắc :  # fff ;
+    con trỏ : con trỏ;
+}
+. personal__title--  nút phải : hover {
+    màu nền :  var ( --dark-cyan );
+}
+. cá nhân__title--phải . playlist__phổ biến--mũi tên  tôi {
+    màu sắc :  var ( --text-color );
+}
+
+
+/*----- BÀI HÁT CÁ NHÂN-----*/
+. container__personal--song {
+    chiều cao :  100 % ;
+    hiển thị : uốn cong;
+    biện minh cho nội dung : không gian giữa;
+    phần đệm :  10 px  20 px ;
+}
+. cá nhân__ bài hát--danh sách {
+    chiều rộng :  70 % ;
+    chiều cao :  230 px ;
+    tràn : ẩn;
+    tràn-y : tự động;
+}
+. personal__song--list-item {
+    hiển thị : uốn cong;
+    biện minh cho nội dung : không gian giữa;
+    căn chỉnh các mục : trung tâm;
+    màu sắc :  var ( --sub-text-color );
+    cỡ chữ :  13 px ;
+    đường viền dưới cùng :  1 px rắn var ( --bố cục đường viền );
+    phần đệm :  10 px ;
+}
+. personal__song--list-item : hover {
+    con trỏ : con trỏ;
+    màu nền :  var ( --bố cục viền );
+    bán kính đường viền :  6 px ;
+}
+. personal__song--list-item . hoạt động {
+    màu nền :  var ( --bố cục viền );
+    bán kính đường viền :  6 px ;
+}
+. song__list-item--left {
+    hiển thị : uốn cong;
+    căn chỉnh các mục : trung tâm;
+    chiều rộng :  40 % ;
+}
+. menu-side__song-item--image ,
+. song__list-item--left-thumbnail {
+    vị trí : họ hàng;
+}
+. menu-side__song-item--image . chơi nhạc__wave ,
+. song__list-item--left-thumbnail . nhạc-play__wave {
+    vị trí : tuyệt đối;
+    chỉ số z :  1 ;
+    chiều rộng :  36px ;
+    chiều cao :  36px ;
+    biên giới : không có;
+    bên trái :  2px ;
+    trên cùng :  -2 px ;
+    hiển thị : không có;
+}
+ 
+. song__list-item--left  >  * {
+    lề phải :  10 px
+}
+. list-item__left--card-info {
+    chiều rộng :  100 % ;
+    hiển thị : uốn cong;
+    flex-direction : cột;
+}
+. list-item__left--card-info . thông tin thẻ__title {
+    khoảng trắng : nowrap;
+    tràn : ẩn;
+    tràn văn bản : dấu chấm lửng;
+    màu sắc :  var ( --text-color );
+    cỡ chữ : 14 px ;
+    trọng lượng phông chữ :  600 ;
+}
+. song__list-item--content {
+    khoảng trắng : nowrap;
+    chiều rộng :  30 % ;
+    tràn : ẩn;
+    tràn văn bản : dấu chấm lửng;
+}
+. song__list-item--left-thumbnail  img {
+    chiều rộng :  36px ;
+    chiều cao :  36px ;
+    bán kính đường viền :  3 px ;
+    /* bộ lọc: độ sáng(50%) */
+}
+. personal__song--animate {
+    chiều rộng :  30 % ;
+    chiều cao :  100 % ;
+    lề phải :  10 px ;
+}
+. hộp-ghi chú-biểu tượng {
+    bộ lọc :  hue-rotate ( -360 độ );
+}
+. box-note-icon : con đầu lòng {
+    chiều cao : 10px ; chiều rộng : 10 px ;
+    bán kính đường viền :  100 px ;
+    lề :  10 px  0 px  0 px  70 px ;
+    độ mờ :  0 ;
+    hình ảnh động : xoay 8 s đảo ngược tuyến tính vô hạn;
+  }
+. box-note-icon : con thứ n ( 2 ){
+    chiều cao : 10px ; chiều rộng : 10 px ;
+    bán kính đường viền :  100 px ;
+    lề :  40 px  0 px  0 px  60 px ;
+    độ mờ :  0 ;
+    hình ảnh động : xoay 8 s đảo ngược tuyến tính vô hạn;
+  }
+. box-note-icon : con thứ n ( 3 ){
+    chiều cao : 10px ; chiều rộng : 10 px ;
+    bán kính đường viền :  100 px ;
+    lề :  0 px  0 px  0 px  0 px ;
+    độ mờ :  0 ;
+    hình ảnh động : xoay 8 s đảo ngược tuyến tính vô hạn;
+  
+  }
+. box-note-icon : con thứ n ( 4 ){
+    chiều cao : 10px ; chiều rộng : 10 px ;
+    bán kính đường viền :  100 px ;
+    lề :  -60 px  0 px  0 px  -30 px ;
+    độ mờ :  0 ;
+    hình ảnh động : xoay 8 s đảo ngược tuyến tính vô hạn;
+  }
+@keyframes xoay {
+    50 % {
+      
+      độ mờ :  1 ;
+    }
+    80 % {
+      biến đổi : xoay ( 360 độ );
+      độ mờ :  0 ;
+    }
+    100 % {
+      biến đổi : xoay ( 360 độ );
+      độ mờ :  0 ;
+    }
+  }
+
+. hộp-ghi chú-biểu tượng  tôi
+{
+    màu sắc :  var ( --text-color )
+}
+
+@keyframes xoay vòng {
+    đến {
+      biến đổi : xoay ( -360 độ );
+    }
+}
+
+
+. container__personal--wrapper-item {
+    hiển thị : không có;
+    lề :  30 px  0 ;
+}
+. container__personal--wrapper-item . hoạt động {
+    hiển thị : khối;
+}
+
+. song-side__playlist--carousel . playlist__mv-item {
+    hiển thị : uốn cong;
+    flex-direction : cột;
+    sắp xếp các mục : bắt đầu;
+    chiều rộng :  330px ;
+    chiều cao :  240 px ;
+    lề :  10 px  30 px  0  0 ;
+}
+. song-side__playlist--carousel . playlist__singer-item {
+    phần đệm :  0  12 px ;
+}
+. song-side__playlist--carousel . playlist__singer-item  img {
+    chiều rộng :  150 px ;
+    chiều cao :  180 px ;
+
+}
+. playlist__mv-item--info {
+    chiều rộng :  80 % ;
+    hiển thị : uốn cong;
+    biện minh cho nội dung : bắt đầu;
+}
+. mv-item__info--nội dung . thông tin_nội dung-tiêu đề {
+    cỡ chữ :  14 px ;
+    trọng lượng phông chữ :  700 ;
+    màu sắc :  var ( --text-color );
+    khoảng trắng : nowrap;
+    chiều rộng tối đa :  100 % ;
+    tràn : ẩn;
+    tràn văn bản : dấu chấm lửng;
+}
+. mv-item__info--thumbnail  img {
+    chiều rộng :  40px ;
+    chiều cao :  40px ;
+    bán kính đường viền :  100 px ;
+    lề phải :  10 px ;
+}
+. mv-item__info--nội dung {
+    hiển thị : uốn cong;
+    chiều rộng :  100 % ;
+    flex-direction : cột;
+    biện minh cho nội dung : không gian xung quanh;
+}
+
+. thông tin_nội dung-phụ đề {
+    chiều rộng :  100 % ;
+    khoảng trắng : nowrap;
+    chiều rộng tối đa :  100 % ;
+    tràn : ẩn;
+    tràn văn bản : dấu chấm lửng;
+}
+. playlist__singer-item--btn {
+    bán kính đường viền :  25 px ;
+    nền :  var ( --active-color );
+    đệm :  6px 12px  ; _ _
+    cỡ chữ :  14 px ;
+    trọng lượng phông chữ :  700 ;
+    hiển thị : uốn cong;
+    biện minh cho nội dung : không gian xung quanh;
+    lề trên :  10 px ;
+    chuyển đổi văn bản : chữ hoa;
+}
+
+/*-----KHÁM PHÁ-----*/
+. song-side__container--thanh trượt {
+    chiều rộng :  95 % ;
+    chiều cao : tự động;
+    bán kính đường viền :  10 px ;
+    ký quỹ :  0 tự động;
+}
+. song-side__container--thanh trượt . cái gạt nước {
+    bán kính đường viền :  10 px ;
+}
+. song-side__container--thanh trượt . swiper-slide  img {
+    chiều rộng :  100 % ;
+    chiều cao :  240 px ;
+    phù hợp với đối tượng : bìa;
+    bán kính đường viền :  10 px ;
+}
+
+. swiper-button-next :: after , . swiper-button-prev :: after {
+    cỡ chữ :  24 px  !quan trọng ;
+}
+
+. swiper-nút-prev ,
+. swiper-button-next {
+    chiều rộng :  50 px  !quan trọng ;
+    chiều cao :  50 px !quan trọng ;
+    màu nền :  hsla ( 0 , 0 % , 100 % , .15 );
+    bóng hộp :  0  2 px  4 px  0  rgb ( 226  102  102  /  15 % );
+    bán kính đường viền :  100 px ;
+}
+
+. swiper-nút-prev ,
+. swiper-button-next {
+    hiển thị : không có !quan trọng ;
+}
+
+. swiper : di chuột . swiper-button-next {
+    hiển thị : flex !quan trọng ;
+}
+. swiper : di chuột . swiper-button-prev {
+    hiển thị : flex !quan trọng ;
+}
+
+/*-----ĐÀI-----*/
+. đài phát thanh . carousel-item__circle--img :: before {
+    nội dung : "TRỰC TIẾP" ;
+    vị trí : tuyệt đối;
+    cỡ chữ :  8 px ;
+    còn lại :  50 % ;
+    dưới cùng :  -6 px ;
+    biến đổi :  dịch ( -50 % ,  -50 % );
+    màu sắc :  var ( --text-color );
+    chỉ số z :  3 ;
+    đệm :  2px 4px ; _  _
+    khoảng cách giữa các chữ cái :  1 px ;
+    màu nền :  # f20 ;
+    bán kính đường viền :  4 px ;
+}
+
+. đài phát thanh . playlist__carousel-item--circle {
+    vị trí : họ hàng;
+}
+. carousel-item__circle--host {
+    chiều rộng :  36 % ;
+    chiều cao : tự động;
+    vị trí : tuyệt đối;
+    phải :  0 ;
+    dưới cùng :  40 px ;
+    bán kính đường viền : 100 px ;
+}
+. carousel-item__circle--host  img {
+    chiều rộng :  100 % ;
+    bán kính đường viền : kế thừa;
+    đường viền :  2 px rắn var ( --music-play-bg ) ;
+}
+. mobile__heading--menu ,
+. mobile__heading--logo ,
+. menu-side__logo  tôi {
+    hiển thị : không có;
+}
+
+/*------CHÂN—--*/
+. song-side__footer {
+    chiều rộng :  100 % ;
+    chiều cao : tự động;
+    hiển thị : uốn cong;
+    flex-direction : cột;
+    biện minh cho nội dung : trung tâm;
+    căn chỉnh các mục : trung tâm;
+    cỡ chữ :  16 px ;
+    màu sắc :  var ( --text-color );
+}
+. footer__title {
+    hiển thị : uốn cong;
+    căn chỉnh các mục : trung tâm;
+}
+. footer__links {
+    căn chỉnh văn bản : trung tâm;
+}
+. footer__links--nav {
+    line-height :  2 ;
+    chiều rộng :  100 %  !quan trọng ;
+    chiều cao : tự động ! quan trọng ;
+}
+. links__nav--item {
+    hiển thị : khối nội tuyến;
+}
+. liên kết đặc biệt {
+    vị trí : họ hàng;
+    trên cùng :  5px ;
+    cỡ chữ :  22 px ;
+    màu :  # d8d8d8 ;
+    lề :  0  5 px ;
+}
