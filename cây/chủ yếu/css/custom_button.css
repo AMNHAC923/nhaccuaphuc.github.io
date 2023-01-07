@@ -1,0 +1,60 @@
+. phát sáng khi di chuột {
+    chiều rộng :  220px ;
+    chiều cao :  50 px ;
+    biên giới : không có;
+    phác thảo : không có;
+    màu sắc :  # fff ;
+    nền :  # 111 ;
+    con trỏ : con trỏ;
+    vị trí : họ hàng;
+    chỉ số z :  0 ;
+    bán kính đường viền :  10 px ;
+}
+
+. glow-on-hover : trước {
+    nội dung :  '' ;
+    nền :  độ dốc tuyến tính ( 45 độ ,  # ff0000 , # ff7300 ,  # fffb00 , # 48ff00 , # 00ffd5 , # 002bff , # 7a00ff , # ff00c8 , # ff0000 );       
+    vị trí : tuyệt đối;
+    hàng đầu :  0 ;
+    trái : 0 ;
+    kích thước nền :  400 % ;
+    chỉ số z :  -1 ;
+    bộ lọc :  làm mờ ( 3 px );
+    chiều rộng :  calc ( 100 %  +  4 px );
+    chiều cao :  calc ( 100 %  +  4 px );
+    hình ảnh động : phát sáng vô hạn tuyến tính 15 giây ;
+    độ mờ :  0 ;
+    quá trình chuyển đổi : độ mờ đục .3 s dễ dàng vào ra;
+    bán kính đường viền :  20 px ;
+}
+
+. phát sáng khi di chuột : đang hoạt động {
+    màu sắc :  # fff ;
+}
+
+. phát sáng khi di chuột : đang hoạt động : sau {
+    nền : trong suốt;
+}
+
+. glow-on-hover : hover : trước {
+    độ mờ :  1 ;
+}
+
+. glow-on-hover : sau {
+    chỉ số z :  -1 ;
+    nội dung :  '' ;
+    vị trí : tuyệt đối;
+    chiều rộng :  100 % ;
+    chiều cao :  100 % ;
+    nền : trong suốt;
+    trái :  0 ;
+    hàng đầu :  0 ;
+    bán kính đường viền :  20 px ;
+    đường viền :  2 px rắn # 36e2ec ;
+}
+
+@keyframes phát sáng {
+    0 % { vị trí nền :  0  0 ; }
+    50 % { vị trí nền :  400 %  0 ; }
+    100 % { vị trí nền :  0  0 ; }
+}
