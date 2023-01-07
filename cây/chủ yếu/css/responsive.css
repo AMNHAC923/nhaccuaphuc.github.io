@@ -1,0 +1,226 @@
+/* DI ĐỘNG VÀ MÁY TÍNH BẢNG */
+@media ( chiều rộng tối đa :  1023 px ) {
+    
+    . ẩn-trên-mobile-tablet {
+        hiển thị : không có;
+    }
+    cơ thể {
+        cỡ chữ :  12 px ;
+    }
+    . mobile__heading--menu ,
+    . mobile__heading--logo ,
+    . menu-side__logo  tôi {
+        hiển thị : khối;
+    }
+    . mobile__heading--logo  img {
+        chiều rộng :  120 px ;
+        lề trái : 60 px ;
+        bộ lọc :  hue-rotate ( 260 độ );
+    }
+    . phía menu {
+        hiển thị : không có;
+        hình ảnh động : di chuyển vào .3 s tuyến tính;
+    }
+    @keyframes di chuyển vào {
+        từ {
+            độ mờ :  0 ;
+            biến đổi :  translateX ( -100 % );
+        }
+        đến {
+            độ mờ :  1 ;
+            biến đổi :  translateX ( 0 % );
+        }
+    }
+    tiêu đề . bài hát phụ {
+        chiều rộng :  100 % ;
+    }
+    . song-side__heading--user  img {
+        lề phải : không đặt;
+    }
+    . song-side__playlist ,
+    . song-side__singer
+    {
+        phần đệm :  0  10 px ;
+    }
+    . chơi nhạc {
+        flex-direction : đảo ngược cột;
+        phần đệm :  5 px ;
+    }
+    . nhạc-play__left {
+        vị trí : tuyệt đối;
+        trái :  0 ;
+        chiều rộng :  50 % ;
+        phần đệm :  0  5 px ;
+    }
+    . nhạc-play__hình ảnh {
+        chiều rộng :  50px ;
+        chiều cao :  50 px ;
+        lề :  0 px  10 px  0 px  2 px ;
+    }
+    . nhạc-play__center {
+        chiều cao :  100 % ;
+        hiển thị : uốn cong;
+        biện minh cho nội dung : không gian giữa;
+        flex-direction : đảo ngược cột;
+        chiều rộng :  100 % ;
+    }
+    . nhạc-play__control {
+        biện minh cho nội dung : flex-end;
+    }
+    . song-side__heading {
+        chiều cao :  120 px ;
+    }
+    . song__animate-img {
+        lề trái :  50 % ;
+        biến đổi :  translateX ( -50 % );
+    }
+
+    . song-side__heading--left {
+        hiển thị : uốn cong;
+        chiều rộng :  85 % ;
+        flex-direction : đảo ngược cột;
+        biện minh cho nội dung : không gian giữa;
+        căn chỉnh các mục : flex-end;
+    }
+    . song-side__heading--right {
+        chiều rộng :  15 % ;
+        hiển thị : uốn cong;
+        flex-direction : đảo ngược cột;
+    }
+    . song-side__heading--right  >  div {
+        lề :  6px ; _
+    }
+    . song-side__banner {
+        lề :  20 px ;
+        phần đệm :  0 px ;
+    }
+    . song-side__banner--title {
+        lề trái :  10 px ;
+        cỡ chữ :  18 px ;
+    }
+    . song-side__banner--content {
+        lề dưới :  8 px ;
+    }
+    
+    . mobile__heading--menu {
+        cỡ chữ :  28 px ;
+        màu sắc :  var ( --text-color );
+    }
+    . menu-side__logo {
+        biện minh cho nội dung : không gian giữa;
+    }
+    . menu-side__logo  tôi {
+        cỡ chữ :  28 px ;
+        lề :  10 px ;
+        màu sắc :  var ( --text-color );
+    }
+    . song-side__heading--search . search__container {
+        chiều cao : tự động;
+        màu nền : trong suốt
+    }
+    . search__container . tìm kiếm-btn {
+        cỡ chữ :  28 px ;
+    }
+    . song-side__playlist--carousel . biểu đồ {
+        hiển thị : khối
+    }
+    . chart__legend-box {
+        chiều rộng :  100 % ;
+        đệm bên phải :  16 px ;
+    }
+    . chart__legend--show-more {
+        đáy :  -10 % ;
+    }
+    . biểu đồ__chính {
+        chiều rộng :  100 % ;
+    }
+    . song-side__chart--overlay {
+        chỉ số z :  -1 ;
+    }
+
+}
+
+/* VIÊN THUỐC */
+@media ( độ rộng tối thiểu :  740 px ) và ( độ rộng tối đa :  1023 px ) {
+    . ẩn trên máy tính bảng {
+        hiển thị : không có;
+    }
+    . song-side__heading--search {
+        chiều rộng :  100 % ;
+        hiển thị : uốn cong;
+        biện minh cho nội dung : không gian giữa;
+        phần đệm bên trái :  20 px ;
+        căn chỉnh các mục : trung tâm;
+    }
+    . song-side__heading--left  ul {
+        chiều rộng :  100 % ;
+    }
+    . music-play__progress--seek {
+        chiều rộng :  100 % ;
+    }
+    . personal__song--animate {
+        lề :  0  30 px ;
+    }
+
+}
+/* DI ĐỘNG */
+màn hình @media và ( max-width :  739 px ) {
+    . ẩn trên di động {
+        hiển thị : không có;
+    }
+    . nhạc-play__control {
+        biện minh cho nội dung : flex-end;
+    }
+    . song-side__heading {
+        chiều cao :  120 px ;
+    }
+    . song-side__heading--left  ul {
+        chiều rộng :  100 % ;
+        biện minh cho nội dung : không gian giữa;
+    }
+    . song__animate-img {
+        lề trái :  50 % ;
+        biến đổi :  translateX ( -50 % );
+    }
+    . container__personal--song {
+        hiển thị : khối;
+    }
+    . container__personal--song  >  * {
+        chiều rộng :  100 % ;
+        lề dưới :  10 px ;
+    }
+    . cá nhân__navbar-mục {
+        cỡ chữ :  10 px ;
+        phần đệm :  10 px ;
+    }
+    . personal__song--list-item {
+        phần đệm :  10 px  0 px ;
+    }
+    . list-item__left--card-info . thông tin thẻ__phụ đề {
+        hiển thị : -webkit-box;
+        -webkit-line-kẹp : 1 ;
+        -webkit-box-orient : dọc;
+        tràn : ẩn;
+        tràn văn bản : dấu chấm lửng;
+        ngắt từ : ngắt từ;
+    }
+    . song__list-item--content {
+        hiển thị : không có
+    }
+    . song__list-item--right {
+        đệm bên phải :  10 px ;
+    }
+    . container__personal--wrapper-item . song-side__playlist--carousel {
+        lề :  0px 10px ; _  _
+    }
+    . song-side__heading--search {
+        hiển thị : uốn cong;
+        chiều rộng :  100 % ;
+        lề phải :  0 px ;
+        căn chỉnh các mục : trung tâm;
+        biện minh cho nội dung : không gian giữa;
+    }
+    . song-side__container--thanh trượt . swiper-slide  img {
+        chiều cao :  180 px ;
+    }
+}
